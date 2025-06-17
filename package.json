@@ -1,29 +1,24 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a//dev/null b/package.json
-index 0000000000000000000000000000000000000000..dc5b9d5eda6ca071a7dc65aa6129bba501a8773a 100644
---- a//dev/null
-+++ b/package.json
-@@ -0,0 +1,20 @@
-+{
-+  "name": "gushpanka-github",
-+  "version": "1.0.0",
-+  "description": "<header>",
-+  "main": "index.js",
-+  "scripts": {
-+    "test": "echo \"Error: no test specified\" && exit 1"
-+  },
-+  "keywords": [],
-+  "author": "",
-+  "license": "ISC",
-+  "type": "commonjs",
-+  "dependencies": {
-+    "@types/react": "^19.1.8",
-+    "@types/react-dom": "^19.1.6",
-+    "react": "^19.1.0",
-+    "react-dom": "^19.1.0",
-+    "typescript": "^5.8.3"
-+  }
-+}
- 
-EOF
-)
+{
+  "name": "interactive-meal-plan",
+  "version": "1.0.0",
+  "description": "Interactive meal planner with React + TypeScript",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3",
+    "vite": "^5.2.0"
+  }
+}
